@@ -1,0 +1,24 @@
+# Ignore OS-specific files
+.DS_Store      # macOS system file
+Thumbs.db      # Windows system file
+
+# Ignore secrets & environment files
+.env
+.env.local
+syncscribe-454510-6b6e3db310f5.json # GCP: Aryan
+mihir_gcp_key.json # GCP: Mihir
+*.secret.json  # Catch-all for any JSON files that might contain secrets
+
+# Ignore Python virtual environments
+venv/
+myenv/         # Likely a virtual environment in fastapi-backend; remove if you want to include it
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore temporary and generated directories
+fastapi-backend/temp/         # Likely temporary files; remove if you want to include it
+fastapi-backend/meeting_outputs/  # Generated transcripts or summaries
+
+# Ignore Node.js dependencies
+node_modules/
